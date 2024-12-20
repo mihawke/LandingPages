@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'roboto': ["Roboto Mono", 'serif'],
+        'orbitron': ['Orbitron', 'sans-serif'],
+        'space': ['Space Mono', 'sans-serif'],
+        'spacegrotesk': ['Space Grotesk', 'serif'],
+        'inter': ["Inter", 'serif']
+      },
       backgroundImage: {
         'inner-shadow': 'linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.7) 100%)',
       },

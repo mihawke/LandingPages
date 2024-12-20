@@ -95,33 +95,33 @@ const NftDesignOne = () => {
               className="ml-1 px-2 bg-gradient-to-r from-purple-500 to-cyan-500"
             >NFT</span>
           </p>
-          <nav className="w-[50%] flex items-center justify-evenly" style={{ fontFamily: 'Space Mono' }}>
+          <nav className="w-[50%] font-space text-sm flex items-center justify-evenly" style={{ fontFamily: 'Space Mono' }}>
             <div className="relative pb-1 hover:opacity-85" onClick={() => setCurrentTab('home')}>
-              <a>Home</a>
+              <a className="font-space">Home</a>
               <div className={`absolute left-0 bottom-0 h-[2px] rounded-full w-[70%] 
               ${currentTab === 'home' ? 'bg-gradient-to-r from-purple-500 to-cyan-500 animate-beam' : 'bg-transparent'}`}
               ></div>
             </div>
             <div className="relative pb-1 hover:opacity-85" onClick={() => setCurrentTab('explore')}>
-              <a>Explore</a>
+              <a className="font-space">Explore</a>
               <div className={`absolute left-0 bottom-0 h-[2px] rounded-full w-[70%] 
               ${currentTab === 'explore' ? 'bg-gradient-to-r from-purple-500 to-cyan-500 animate-beam' : 'bg-transparent'}`}
               ></div>
             </div>
             <div className="relative pb-1 hover:opacity-85" onClick={() => setCurrentTab('marketplace')}>
-              <a>Marketplace</a>
+              <a className="font-space">Marketplace</a>
               <div className={`absolute left-0 bottom-0 h-[2px] rounded-full w-[70%] 
               ${currentTab === 'marketplace' ? 'bg-gradient-to-r from-purple-500 to-cyan-500 animate-beam' : 'bg-transparent'}`}
               ></div>
             </div>
             <div className="relative pb-1 hover:opacity-85" onClick={() => setCurrentTab('artists')}>
-              <a>Artists</a>
+              <a className="font-space">Artists</a>
               <div className={`absolute left-0 bottom-0 h-[2px] rounded-full w-[70%] 
               ${currentTab === 'artists' ? 'bg-gradient-to-r from-purple-500 to-cyan-500 animate-beam' : 'bg-transparent'}`}
               ></div>
             </div>
             <div className="relative pb-1 hover:opacity-85" onClick={() => setCurrentTab('news')}>
-              <a>News</a>
+              <a className="font-space">News</a>
               <div className={`absolute left-0 bottom-0 h-[2px] rounded-full w-[70%] 
               ${currentTab === 'news' ? 'bg-gradient-to-r from-purple-500 to-cyan-500 animate-beam' : 'bg-transparent'}`}
               ></div>
