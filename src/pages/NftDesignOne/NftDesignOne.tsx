@@ -129,18 +129,17 @@ const NftDesignOne = () => {
           </nav>
           <div className="flex items-center gap-5">
             <button
-              className="p-[1px] rounded-lg  bg-gradient-to-r from-purple-500 to-cyan-500"
+              className="p-[1px] rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-lg hover:shadow-[0px_0px_20px_4px] hover:scale-105 hover:shadow-purple-500/60 transition-all duration-300 relative overflow-hidden"
             >
               <p className="bg-black px-6 py-1 rounded-lg">Search</p>
             </button>
             <button
-              className=" px-6 py-1 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500">
+              className="px-6 py-1 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-lg hover:shadow-[0px_0px_20px_4px] hover:scale-105 hover:shadow-purple-500/60 transition-all duration-300 relative overflow-hidden"
+            >
               Register
             </button>
           </div>
         </header>
-
-
         <section className="flex flex-1 items-center justify-center px-10">
           <div className="flex flex-col w-[60%]">
             <h1 className="lg:text-[86px] leading-[1] mb-5" style={{ fontFamily: 'Good Timing' }}>Discover, Collect and Sell Dope Art and NFTs</h1>
@@ -150,16 +149,16 @@ const NftDesignOne = () => {
             </p>
             <div className="flex items-center mb-10">
               <button
-                className=" px-6 py-1 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500"
+                className="px-6 py-1 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 hover:shadow-[0px_0px_20px_4px] hover:scale-105 hover:shadow-purple-500/50 transition-all duration-300"
               >
                 Discover
               </button>
               <button
-                className="p-[1px] rounded-lg ml-5"
-                style={{ background: 'linear-gradient(90deg, #9333ea 0%, #12aff2 100%)' }}>
+                className="p-[1px] rounded-lg ml-5 hover:shadow-[0px_0px_20px_4px] hover:scale-105 hover:shadow-purple-500/50 transition-all duration-300"
+                style={{ background: 'linear-gradient(90deg, #a855f7 0%, #06b6d4 100%)' }}>
                 <p className="bg-black px-6 py-1 rounded-lg">Create</p>
               </button>
-              <div className="flex items-center gap-2 ml-10 opacity-50 hover:opacity-70 cursor-pointer">
+              <div className="flex items-center justify-center gap-2 ml-10 opacity-50 hover:opacity-70 cursor-pointer">
                 <FaVideo className="text-blue-600" />
                 <p className="text-sm underline underline-offset-2">Watch a video</p>
               </div>
@@ -178,34 +177,36 @@ const NftDesignOne = () => {
                 <p>Art Works</p>
               </div>
             </div>
-          </div>
-          <div className="relative z-20">
-            <div className="h-[500px] w-[350px] bg-cover bg-center rounded-xl" style={{ backgroundImage: `url(${mainImg})` }} />
-            <div className="flex w-full justify-between px-8 py-3 absolute bottom-0 left-0"
-              style={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                backdropFilter: 'blur(5px)',
-                WebkitBackdropFilter: 'blur(5px)',
-                borderBottomLeftRadius: '10px',
-                borderBottomRightRadius: '10px',
-              }}>
-              <div className="text-left flex flex-col gap-1">
-                <p className="text-white text-xs text-opacity-70">Ending in:</p>
-                <p className="text-sm">1h 20m 30s</p>
-                <button
-                  className="text-xs px-4 py-1 rounded-md bg-gradient-to-r from-purple-500 to-cyan-500"
-                >
-                  Place a Bid
-                </button>
-              </div>
-              <div className="flex flex-col gap-1 text-right">
-                <p className="text-white text-xs text-opacity-70">Highest Bid</p>
-                <p className="text-sm">32.4 ETH</p>
-                <button
-                  className="text-xs px-6 py-1 rounded-md bg-gradient-to-r from-purple-500 to-cyan-500"
-                >
-                  Purchase
-                </button>
+          </div>  <div className="relative z-20 group transition-all duration-300 hover:scale-[1.02]">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-xl opacity-0 group-hover:opacity-70 blur-lg transition-all duration-300" />
+
+            <div className="relative">
+              <div className="h-[500px] w-[350px] bg-cover bg-center rounded-xl transition-all duration-300 group-hover:shadow-2xl"
+                style={{ backgroundImage: `url(${mainImg})` }}
+              />
+
+              <div className="flex w-full justify-between px-8 py-3 absolute bottom-0 left-0 transition-all duration-300 group-hover:bg-opacity-20"
+                style={{
+                  background: 'rgba(255, 255, 255, 0.1)',
+                  backdropFilter: 'blur(5px)',
+                  WebkitBackdropFilter: 'blur(5px)',
+                  borderBottomLeftRadius: '10px',
+                  borderBottomRightRadius: '10px',
+                }}>
+                <div className="text-left flex flex-col gap-1">
+                  <p className="text-white text-xs text-opacity-70">Ending in:</p>
+                  <p className="text-sm text-white">1h 20m 30s</p>
+                  <button className="text-xs px-4 py-1 rounded-md bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 text-white">
+                    Place a Bid
+                  </button>
+                </div>
+                <div className="flex flex-col gap-1 text-right">
+                  <p className="text-white text-xs text-opacity-70">Highest Bid</p>
+                  <p className="text-sm text-white">32.4 ETH</p>
+                  <button className="text-xs px-6 py-1 rounded-md bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 text-white">
+                    Purchase
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -243,15 +244,20 @@ const NftDesignOne = () => {
             return (
               <div
                 key={index}
-                className="rounded-lg shadow-lg transition-transform duration-500 z-10"
+                className="relative group flex-none transition-all duration-500 hover:scale-105"
               >
-                <NftCard
-                  imageSrc={item.imageSrc}
-                  title={item.title}
-                  artist={item.artist}
-                  price={item.price}
-                  likes={item.likes}
-                />
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg opacity-0 group-hover:opacity-50 blur-md transition-all duration-300" />
+                <div
+                  className="rounded-lg shadow-lg transition-transform duration-500 z-10"
+                >
+                  <NftCard
+                    imageSrc={item.imageSrc}
+                    title={item.title}
+                    artist={item.artist}
+                    price={item.price}
+                    likes={item.likes}
+                  />
+                </div>
               </div>
             );
           })}
@@ -443,20 +449,24 @@ const NftDesignOne = () => {
         </div>
       </section>
 
-      <section className="w-[60%] py-10 my-20 gap-5 border-2 border-white/30 rounded-tl-[80px] rounded-br-[80px] flex flex-col items-center justify-center bg-gradient-to-r  from-indigo-800 via-indigo-950 to-indigo-800">
+      <section
+        className="w-[60%] py-10 my-20 gap-5 border-2 border-white/30 rounded-tl-[80px] rounded-br-[80px] flex flex-col items-center justify-center bg-gradient-to-r from-indigo-800 via-indigo-950 to-indigo-800 relative overflow-hidden"
+      >
         <h1
-          className="text-xl md:text-4xl font-normal text-center w-[60%]"
-          style={{ fontFamily: 'Good Timing' }}
+          className="text-xl md:text-4xl font-normal text-center w-[60%] relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-500 to-purple-400"
+          style={{ fontFamily: "Good Timing" }}
         >
           Join Us to Create Sell and Collect NFTs Digital Art
         </h1>
+
         <button
-          className="text-2xl w-fit h-fit px-6 py-1 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500"
-          style={{ fontFamily: 'Good Timing' }}
+          className="text-2xl w-fit h-fit px-6 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 shadow-[0px_0px_20px_4px] shadow-cyan-500 hover:shadow-purple-500 transition-all duration-300 ease-in-out hover:scale-105 relative z-10"
+          style={{ fontFamily: "Good Timing" }}
         >
           Join Community
         </button>
       </section>
+
 
       <footer className="w-full pt-10 pb-8 px-4 z-10">
         <div className="flex justify-between">
@@ -620,106 +630,47 @@ interface ExploreCardProps {
 }
 const ExploreCard: React.FC<ExploreCardProps> = ({ imgOne, imgTwo, imgThree, imgFour, category, quantity }) => {
   return (
-    <div className="flex w-full h-full p-2 gap-4 flex-col rounded-lg shadow-lg hover:shadow-xl border border-white bg-gradient-to-r from-black via-indigo-900 to-indigo-950 transition-shadow duration-300">
-      <div className="space-y-2">
-        <div className="flex flex-row gap-2">
-          <div className="w-full h-20">
-            <img
-              src={imgOne}
-              className="w-full h-full object-cover object-center rounded-md"
-            />
+    <div className="group relative">
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-indigo-500 to-cyan-500 rounded-lg opacity-0 group-hover:opacity-100 blur transition-all duration-500 animate-gradient-x" />
+
+      {/* Main container */}
+      <div className="relative flex w-full h-full p-2 gap-4 flex-col rounded-lg bg-gradient-to-r from-black via-indigo-900 to-indigo-950">
+        {/* Glass overlay on hover */}
+        <div className="absolute inset-0 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-10 bg-white" />
+
+        <div className="space-y-2">
+          {/* Top row of images */}
+          <div className="flex flex-row gap-2">
+            {[imgOne, imgTwo, imgThree].map((img, index) => (
+              <div key={index} className="w-full h-20 overflow-hidden rounded-md group/image relative">
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300" />
+                <img
+                  src={img}
+                  className="w-full h-full object-cover object-center rounded-md transition-transform duration-500 group-hover/image:scale-110"
+                />
+              </div>
+            ))}
           </div>
-          <div className="w-full h-20">
+
+          {/* Bottom image */}
+          <div className="flex h-20 overflow-hidden rounded-md group/image relative">
+            <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300" />
             <img
-              src={imgTwo}
-              className="w-full h-full object-cover object-center rounded-md"
-            />
-          </div>
-          <div className="w-full h-20">
-            <img
-              src={imgThree}
-              className="w-full h-full object-cover object-center rounded-md"
+              src={imgFour}
+              className="w-full h-full object-cover object-center rounded-md transition-transform duration-500 group-hover/image:scale-110"
             />
           </div>
         </div>
-        <div className="flex h-20">
-          <img
-            src={imgFour}
-            className="w-full h-full object-cover object-center rounded-md"
-          />
+
+        <div className="flex w-full items-center justify-between relative z-10">
+          <p className="text-md font-medium text-white group-hover:text-purple-300 transition-colors duration-300">
+            {category}
+          </p>
+          <p className="px-2 py-1 w-fit h-fit text-sm font-medium text-white bg-transparent border border-purple-600 rounded-lg group-hover:bg-purple-600/20 group-hover:border-purple-400 transition-all duration-300">
+            {quantity} items
+          </p>
         </div>
-      </div>
-      <div className="flex w-full items-center justify-between">
-        <p className="text-md font-medium">{category}</p>
-        <p className="px-2 py-1 w-fit h-fit text-sm font-medium text-white bg-transparent border border-[#9333ea] rounded-lg ">
-          {quantity} items
-        </p>
       </div>
     </div>
   )
 }
-
-const sectionRef = (
-
-  <section className="min-h-screen w-full bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white">
-    <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between gap-12">
-
-      {/* Left Content */}
-      <div className="flex-1 space-y-6">
-        <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-          Discover, Collect & Sell
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> Extraordinary </span>
-          NFTs
-        </h1>
-
-        <p className="text-lg lg:text-xl text-gray-300 max-w-2xl">
-          Welcome to the future of digital art collecting. Our marketplace brings together artists and collectors in a seamless ecosystem where creativity meets technology.
-        </p>
-
-        <div className="flex flex-wrap gap-4 pt-4">
-          <button className="bg-purple-600 hover:bg-purple-700 text-lg px-8 py-6">
-            Explore Collection
-          </button>
-          <button className="border-purple-600 text-purple-400 hover:bg-purple-600/10 text-lg px-8 py-6">
-            Create NFT
-          </button>
-        </div>
-
-        <div className="flex gap-12 pt-8">
-          <div>
-            <h3 className="text-3xl font-bold">20K+</h3>
-            <p className="text-gray-400">Artworks</p>
-          </div>
-          <div>
-            <h3 className="text-3xl font-bold">10K+</h3>
-            <p className="text-gray-400">Artists</p>
-          </div>
-          <div>
-            <h3 className="text-3xl font-bold">5K+</h3>
-            <p className="text-gray-400">Collectors</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Right Content - Featured NFT Preview */}
-      <div className="flex-1 relative">
-        <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/api/placeholder/600/600"
-            alt="Featured NFT"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-            <h3 className="text-xl font-bold">Featured Collection</h3>
-            <p className="text-gray-300">By Top Artists</p>
-          </div>
-        </div>
-
-        {/* Decorative Elements */}
-        <div className="absolute -z-10 top-1/2 right-1/2 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl"></div>
-        <div className="absolute -z-10 bottom-1/2 left-1/2 w-96 h-96 bg-blue-600/30 rounded-full blur-3xl"></div>
-      </div>
-
-    </div>
-  </section>
-)
