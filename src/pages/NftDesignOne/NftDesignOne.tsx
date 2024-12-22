@@ -72,24 +72,24 @@ const NftDesignOne = () => {
   return (
     <div className="flex flex-1 w-screen flex-col items-center bg-black text-white relative">
       <div className="absolute top-[8%] left-10 z-10 rounded-full w-[1px] h-[1px]"
-        style={{ boxShadow: '0 0 1200px 300px rgba(139, 92, 246, 0.2)' }}
+        style={{ boxShadow: '0 0 1200px 300px rgba(139, 92, 246, 0.3)' }}
       />
       <div className="absolute top-[15%] right-5 z-20 rounded-full w-[1px] h-[1px]"
-        style={{ boxShadow: '0 0 1200px 300px rgba(96, 165, 250, 0.2)' }}
+        style={{ boxShadow: '0 0 1200px 300px rgba(96, 165, 250, 0.3)' }}
       />
       <div className="absolute top-[38%] right-[50%] rounded-full w-[1px] h-[1px]"
         style={{ boxShadow: '0 0 1200px 350px rgba(96, 165, 250, 0.3)' }}
       />
       <div
         className="absolute top-[75%] right-[10%] rounded-full w-[1px] h-[1px]"
-        style={{ boxShadow: '0 0 1200px 400px rgba(139, 92, 246, 0.2)' }}
+        style={{ boxShadow: '0 0 1200px 400px rgba(139, 92, 246, 0.3)' }}
       />
 
       <div className="absolute bottom-[5%] left-[10%] rounded-full w-[1px] h-[1px]"
-        style={{ boxShadow: '0 0 1200px 300px rgba(139, 92, 246, 0.2)' }}
+        style={{ boxShadow: '0 0 1200px 300px rgba(139, 92, 246, 0.3)' }}
       />
       <main className="flex flex-1 flex-col min-h-screen">
-        <header className="flex items-center justify-between px-16 py-6">
+        <header className="flex items-center justify-between px-10 py-6">
           <p className="text-[26px] font-semibold" style={{ fontFamily: 'Good Timing' }}>LOGO
             <span
               className="ml-1 px-2 bg-gradient-to-r from-purple-500 to-cyan-500"
@@ -141,10 +141,11 @@ const NftDesignOne = () => {
         </header>
 
 
-        <section className="flex flex-1 items-center justify-center gap-[200px] px-16 py-6">
-          <div className="flex flex-col w-[580px]">
-            <h1 className="text-[64px] leading-[1] mb-5" style={{ fontFamily: 'Good Timing' }}>Discover, Collect and Sell Dope Art and NFTs</h1>
-            <p className="mb-10 text-white text-opacity-85">The worlds largest digital marketplace for crypto <br></br>
+        <section className="flex flex-1 items-center justify-center px-10">
+          <div className="flex flex-col w-[60%]">
+            <h1 className="lg:text-[86px] leading-[1] mb-5" style={{ fontFamily: 'Good Timing' }}>Discover, Collect and Sell Dope Art and NFTs</h1>
+            <p className="mb-10 text-white text-opacity-85">
+              The worlds largest digital marketplace for crypto <br></br>
               collections and non fungible tokens (NFTs)
             </p>
             <div className="flex items-center mb-10">
@@ -163,16 +164,16 @@ const NftDesignOne = () => {
                 <p className="text-sm underline underline-offset-2">Watch a video</p>
               </div>
             </div>
-            <div className="flex w-fit gap-10 px-10 rounded-xl  bg-gradient-to-r from-purple-800 to-cyan-800">
-              <div className="flex flex-col w-fit items-center scale-y-75">
+            <div className="flex w-fit gap-10 px-10 py-5 border-2 border-white/50 rounded-xl  bg-gradient-to-r from-purple-800 to-cyan-800">
+              <div className="flex flex-col w-fit items-center scale-y-95">
                 <p className="text-3xl" style={{ fontFamily: 'Good Timing' }}>27k+</p>
                 <p>Art Works</p>
               </div>
-              <div className="flex flex-col w-fit items-center scale-y-75">
+              <div className="flex flex-col w-fit items-center scale-y-95">
                 <p className="text-3xl" style={{ fontFamily: 'Good Timing' }}>7k+</p>
                 <p>Artists</p>
               </div>
-              <div className="flex flex-col w-fit items-center scale-y-75">
+              <div className="flex flex-col w-fit items-center scale-y-95">
                 <p className="text-3xl" style={{ fontFamily: 'Good Timing' }}>27k+</p>
                 <p>Art Works</p>
               </div>
@@ -211,7 +212,8 @@ const NftDesignOne = () => {
         </section>
       </main>
 
-      <div className="relative w-full overflow-hidden h-24 bg-gradient-to-r from-purple-800/50 to-cyan-800/50 my-40">
+      <div className="relative w-full overflow-hidden h-20 bg-gradient-to-r from-purple-800/50 to-cyan-800/50 my-20">
+        <div className="absolute w-full h-full bg-inner-shadow z-10" />
         {/* Scrolling Content */}
         <div
           className="absolute flex w-full h-full items-center gap-8 animate-scroll"
@@ -235,7 +237,7 @@ const NftDesignOne = () => {
       </div>
 
       <section className="min-h-screen w-full px-20 flex flex-col items-center justify-evenly overflow-hidden relative z-10">
-        <h1 className="text-[40px] font-bold mb-16 z-10" style={{ fontFamily: 'Good Timing' }}>Popular this week</h1>
+        <h1 className="text-[40px] font-bold z-10" style={{ fontFamily: 'Good Timing' }}>Popular this week</h1>
         <div className="w-full flex overflow-x-scroll gap-8 p-4">
           {PopularCardsData.map((item, index) => {
             return (
@@ -256,7 +258,7 @@ const NftDesignOne = () => {
         </div>
       </section>
 
-      <section className="w-screen flex flex-col items-center justify-center overflow-hidden my-40 gap-10 z-10">
+      <section className="w-screen flex flex-col items-center justify-center overflow-hidden my-10 py-10 gap-10 z-10">
         <h1 className="text-[40px] font-bold " style={{ fontFamily: 'Good Timing' }}>Top Sellers</h1>
         <div className="w-full flex flex-col gap-8 relative">
           <div className="absolute w-full h-full bg-inner-shadow z-20" />
@@ -397,7 +399,7 @@ const NftDesignOne = () => {
         </div>
       </section>
 
-      <section className="min-h-screen w-full max-w-[80%] mx-auto px-4 py-8 flex flex-col gap-16 z-10">
+      <section className="min-h-screen w-full mx-auto px-40 py-10 flex flex-col gap-16 z-10">
         <h1
           className="text-4xl md:text-5xl font-bold text-center"
           style={{ fontFamily: 'Good Timing' }}
@@ -456,7 +458,7 @@ const NftDesignOne = () => {
         </button>
       </section>
 
-      <footer className="w-full pt-12 pb-8 px-4 z-10">
+      <footer className="w-full pt-10 pb-8 px-4 z-10">
         <div className="flex justify-between">
           <div className="h-fit space-y-8">
             <div>

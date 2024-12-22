@@ -14,7 +14,8 @@ export default {
         'inter': ["Inter", 'serif']
       },
       backgroundImage: {
-        'inner-shadow': 'linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.7) 100%)',
+        'back-shadow':'linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,1) 100%)',
+        'inner-shadow': 'linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.8) 100%)',
       },
 
       keyframes: {

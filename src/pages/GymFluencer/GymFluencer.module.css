@@ -1,0 +1,19 @@
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  .cardEnter {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .cardLeave {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
